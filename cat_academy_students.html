@@ -1,0 +1,239 @@
+<html>
+<head>
+  <title>Welcome to Cat Academy</title>
+  <style>
+  nav, aside, div, body, a, li, h1, h2, ul, p {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  	font-size: 100%;
+  	font: inherit;
+  	vertical-align: baseline;
+  }
+
+  body {
+    line-height: 1;
+  }
+
+  ul {
+  	list-style: none;
+  }
+
+  body {
+    background-color: grey;
+    font-family: sans-serif;
+
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  p {
+    padding-top: 10px;
+  }
+
+  a {
+    display: block;
+  }
+
+  .container{
+    width: 800px;
+    margin:auto;
+    background-color: white;
+    border: 2px solid black;
+    border-top: 0px;
+    border-radius: 1px;
+  }
+
+  .sidebar {
+    float: left;
+    width: 178px;
+    border-right: 2px solid green;
+    padding: 10px;
+    min-width: 100px;
+    margin: 15px 0;
+  }
+
+  .content{
+    padding: 10px;
+    float: right;
+    width: 580px;
+    margin-top: 15px;
+  }
+
+
+
+  .footer{
+    clear:both;
+    border-top: 2px solid purple;
+    background-color: #ccc;
+  }
+
+  .footer ul {
+    float: right;
+
+  }
+
+  .footer h1 {
+    float: left;
+    padding: 10px;
+  }
+
+  .footer li {
+    float: left;
+  }
+
+  .footer li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+
+  .footer li a:hover{
+    background-color: #bbb;
+  }
+
+
+  .footer:after {
+    content: "";
+    display:table;
+    clear: both;
+  }
+
+  header {
+    background-color: blue;
+    border-bottom: 2px solid black;
+  }
+
+  .top-bar{
+    width: 802px;
+    margin: auto;
+    border-left: 2px solid black;
+    background-color: green;
+  }
+
+  .group:after {
+    content: "";
+    display:table;
+    clear:both;
+  }
+
+  .logo{
+    float: left;
+    padding: 20px;
+    color: white;
+  }
+
+  .top-links{
+    display: block;
+    float: right;
+  }
+
+  .top-links li {
+    border-right: 2px solid black;
+    display:block;
+    float: left;
+    border-bottom: 0;
+  }
+
+  .top-links li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .top-links li a:hover {
+    background-color: orange;
+  }
+
+  .top-links li:first-child{
+    border-left: 2px solid black;
+  }
+
+  .notifications {
+    position: relative;
+  }
+
+
+  .dropdown {
+    position: absolute;
+    display:none;
+  }
+
+  .notifications:hover > .dropdown {
+    display:block;
+  }
+
+  .notifications:hover > a {
+    background:orange;
+  }
+
+  .top-bar .dropdown li {
+    border: 2px solid black;
+    background-color: blue;
+  }
+
+  .top-bar .dropdown li{
+    float: none;
+  }
+
+  .notifications span{
+    padding:5px;
+    background-color:blue;
+    border-radius: 15px;
+    margin-left: 5px;
+  }
+
+  .notifications:hover span{
+    background-color: green;
+  }
+
+  </style>
+</head>
+
+<body>
+  <header class="group">
+    <nav class="top-bar group">
+      <h1 class="logo">Cat Academy Students</h1>
+      <ul class="top-links">
+        <li><a href="#">Home</a></li>
+        <li class="notifications"><a href="#">Notifications<span>4</span></a>
+          <ul class="dropdown">
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </aside>
+
+    <div class="content">
+      <h2>Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <footer class="footer">
+
+        <h1>Copyright</h1>
+        <ul class="group">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+
+    </footer>
+  </div>
+</body>
+</html>
